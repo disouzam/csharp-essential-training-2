@@ -1,10 +1,21 @@
-﻿namespace LinkedIn.Essentials2
+﻿using System.Diagnostics;
+
+namespace LinkedIn.Essentials2
 {
     public static class Program
     {
-        static void Main()
+        public static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            // To be implemented
+        }
+
+        public static void Swap(object first, object second)
+        {
+            object temp = second;
+            second = first;
+            first = temp;
+
+            Debug.Assert(first != second);
         }
     }
 }
