@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.Diagnostics.Metrics;
 
 using Essentials2.Library;
 
@@ -41,6 +43,26 @@ public static class Program
         Swap(p1, p2);
 
         Console.WriteLine($"After swapping >>> p1: {p1.ToString()} and p2: {p2.ToString()}");
+
+        // Also don't work as it would be expected
+
+        //Before swapping >>> p1: Id: 0
+        //FirstName: matt
+        //LastName: milner
+        //Age: 50
+        // and p2: Id: 0
+        //FirstName: amanda
+        //LastName: owner
+        //Age: 39
+
+        //After swapping >>> p1: Id: 0
+        //FirstName: matt
+        //LastName: milner
+        //Age: 50
+        // and p2: Id: 0
+        //FirstName: amanda
+        //LastName: owner
+        //Age: 39
     }
 
     public static void Swap(object first, object second)
