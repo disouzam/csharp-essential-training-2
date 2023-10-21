@@ -1,6 +1,6 @@
 ﻿namespace Essentials2.Library
 {
-    public class Class1
+    public class Person
     {
 
     }
