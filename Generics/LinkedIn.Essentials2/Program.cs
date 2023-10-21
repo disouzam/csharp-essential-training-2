@@ -1,8 +1,8 @@
 ﻿namespace LinkedIn.Essentials2
 {
-    internal class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Hello, World!");
         }
