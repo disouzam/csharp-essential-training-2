@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 
@@ -15,7 +15,7 @@ public static class Program
 
         Console.WriteLine($"Before swapping >>> X: {x} and Y: {y}");
 
-        Swap(x, y);
+        //Swap(x, y);
 
         Console.WriteLine($"After swapping >>> X: {x} and Y: {y}");
 
@@ -65,9 +65,9 @@ public static class Program
         //Age: 39
     }
 
-    public static void Swap(object first, object second)
+    public static void Swap(Person first, Person second)
     {
-        object temp = second;
+        Person temp = second;
         second = first;
         first = temp;
 
