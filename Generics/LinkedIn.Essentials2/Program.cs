@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 
@@ -67,6 +67,9 @@ public static class Program
 
     public static void Swap(Person first, Person second)
     {
+        first.FirstName = "Joao";
+        second.FirstName = "Maria";
+
         Person temp = second;
         second = first;
         first = temp;
