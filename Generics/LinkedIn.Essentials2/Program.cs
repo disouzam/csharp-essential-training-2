@@ -43,7 +43,7 @@ public static class Program
         {
             var addressP1 = &p1;
             var addressP2 = &p2;
-            
+
             Console.WriteLine($"Variable adresses: p1: {(long)addressP1} - p2: {(long)addressP2}");
         }
 
@@ -80,12 +80,21 @@ public static class Program
         //Age: 39
     }
 
-    public static void Swap(Person first, Person second)
+    public static void Swap(object first, object second)
     {
-        first.FirstName = "Joao";
-        second.FirstName = "Maria";
+        var firstType = first.GetType();
+        var secondType = second.GetType();
 
-        Person temp = second;
+
+
+        if (firstType == typeof(Person) && secondType == typeof(Person))
+        {
+            var propFirstName = firstType.GetProperty("FirstName");
+            propFirstName?.SetValue(first, "Joao");
+            propFirstName?.SetValue(second, "Maria");
+        }
+
+        object temp = second;
         second = first;
         first = temp;
 
