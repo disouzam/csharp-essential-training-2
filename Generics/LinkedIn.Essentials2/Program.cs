@@ -80,7 +80,7 @@ public static class Program
         //Age: 39
     }
 
-    public static void Swap(ref object first, ref object second)
+    public static void Swap<T>(ref T first, ref T second)
     {
         var firstType = first.GetType();
         var secondType = second.GetType();
@@ -92,7 +92,7 @@ public static class Program
             propFirstName?.SetValue(second, "Maria");
         }
 
-        object temp = second;
+        T temp = second;
         second = first;
         first = temp;
 
