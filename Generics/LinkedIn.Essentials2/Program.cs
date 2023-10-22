@@ -96,6 +96,6 @@ public static class Program
         second = first;
         first = temp;
 
-        Debug.Assert(first != second);
+        Debug.Assert(first.Equals(second));
     }
 }
