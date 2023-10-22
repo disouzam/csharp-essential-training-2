@@ -82,8 +82,8 @@ public static class Program
 
     public static void Swap<T>(ref T first, ref T second)
     {
-        var firstType = first.GetType();
-        var secondType = second.GetType();
+        var firstType = first?.GetType();
+        var secondType = second?.GetType();
 
         if (firstType == typeof(Person) && secondType == typeof(Person))
         {
