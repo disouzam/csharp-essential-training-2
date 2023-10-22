@@ -47,7 +47,7 @@ public static class Program
             Console.WriteLine($"Variable adresses: p1: {(long)addressP1} - p2: {(long)addressP2}");
         }
 
-        Swap(p1, p2);
+        Swap(ref p1, ref p2);
 
         Console.WriteLine($"After swapping >>> p1:{Environment.NewLine}{p1.ToString()} {Environment.NewLine} and {Environment.NewLine}p2:{Environment.NewLine}{p2.ToString()}");
 
@@ -80,7 +80,7 @@ public static class Program
         //Age: 39
     }
 
-    public static void Swap(object first, object second)
+    public static void Swap(ref object first, ref object second)
     {
         var firstType = first.GetType();
         var secondType = second.GetType();
