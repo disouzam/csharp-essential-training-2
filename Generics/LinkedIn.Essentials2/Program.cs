@@ -1,6 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.Diagnostics.Metrics;
+﻿using System.Diagnostics;
 
 using Essentials2.Library;
 
@@ -38,11 +36,28 @@ public static class Program
             Age = 39
         };
 
-        Console.WriteLine($"Before swapping >>> p1: {p1.ToString()} and p2: {p2.ToString()}");
+
+        Console.WriteLine($"Before swapping >>> p1:{Environment.NewLine}{p1.ToString()} {Environment.NewLine} and {Environment.NewLine}p2:{Environment.NewLine}{p2.ToString()}");
+
+        unsafe
+        {
+            var addressP1 = &p1;
+            var addressP2 = &p2;
+            
+            Console.WriteLine($"Variable adresses: p1: {(long)addressP1} - p2: {(long)addressP2}");
+        }
 
         Swap(p1, p2);
 
-        Console.WriteLine($"After swapping >>> p1: {p1.ToString()} and p2: {p2.ToString()}");
+        Console.WriteLine($"After swapping >>> p1:{Environment.NewLine}{p1.ToString()} {Environment.NewLine} and {Environment.NewLine}p2:{Environment.NewLine}{p2.ToString()}");
+
+        unsafe
+        {
+            var addressP1 = &p1;
+            var addressP2 = &p2;
+
+            Console.WriteLine($"Variable adresses: p1: {(long)addressP1} - p2: {(long)addressP2}");
+        }
 
         // Also don't work as it would be expected
 
