@@ -78,6 +78,15 @@ public static class Program
         //FirstName: amanda
         //LastName: owner
         //Age: 39
+
+        string jsonPerson = @"{""Id"": 0,
+            ""FirstName"": ""Matt"",
+            ""LastName"": ""Milner"",
+            ""Age"": 50}";
+
+        var pj = System.Text.Json.JsonSerializer.Deserialize<Person>(jsonPerson);
+
+        Console.WriteLine($"JSON Person: {pj?.FirstName} is {pj?.Age}");
     }
 
     public static void Swap<T>(ref T first, ref T second)
