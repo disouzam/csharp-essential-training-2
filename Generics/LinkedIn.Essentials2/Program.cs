@@ -13,7 +13,7 @@ public static class Program
 
         Console.WriteLine($"Before swapping >>> X: {x} and Y: {y}");
 
-        //Swap(x, y);
+        Swap(ref x, ref y);
 
         Console.WriteLine($"After swapping >>> X: {x} and Y: {y}");
 
@@ -96,6 +96,6 @@ public static class Program
         second = first;
         first = temp;
 
-        Debug.Assert(first.Equals(second));
+        Debug.Assert(!first.Equals(second));
     }
 }
