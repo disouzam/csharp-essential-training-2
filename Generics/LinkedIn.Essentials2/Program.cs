@@ -85,8 +85,6 @@ public static class Program
         var firstType = first.GetType();
         var secondType = second.GetType();
 
-
-
         if (firstType == typeof(Person) && secondType == typeof(Person))
         {
             var propFirstName = firstType.GetProperty("FirstName");
