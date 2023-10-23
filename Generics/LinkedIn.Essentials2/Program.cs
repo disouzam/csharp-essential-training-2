@@ -17,7 +17,7 @@ public static class Program
         };
 
         var mapper = new CustomerToPersonMapper();
-        var p = mapper.Map(c);
+        var p = c.Map<Person>(mapper);
 
         Console.WriteLine(p.FirstName);
     }

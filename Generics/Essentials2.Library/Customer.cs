@@ -9,5 +9,10 @@
         public string LastName { get; set; }
 
         public DateTime CreateDate { get; set; }
+
+        public T Map<T>(IMapper<Customer, T> mapper)
+        {
+            return mapper.Map(this);
+        }
     }
 }
