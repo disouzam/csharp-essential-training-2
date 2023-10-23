@@ -8,7 +8,18 @@ public static class Program
 {
     public static void Main()
     {
+        var c = new Customer
+        {
+            Id = 7,
+            FirstName = "customer",
+            LastName = "first",
+            CreateDate = new DateTime(2022, 1, 17)
+        };
 
+        var mapper = new CustomerToPersonMapper();
+        var p = mapper.Map(c);
+
+        Console.WriteLine(p.FirstName);
     }
 
     public static void Swap<T>(ref T first, ref T second)
