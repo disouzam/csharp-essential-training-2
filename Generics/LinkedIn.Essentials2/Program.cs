@@ -87,6 +87,11 @@ public static class Program
         var pj = System.Text.Json.JsonSerializer.Deserialize<Person>(jsonPerson);
 
         Console.WriteLine($"JSON Person: {pj?.FirstName} is {pj?.Age}");
+
+        Nullable<int> a = 7;
+
+        Nullable<DateTime> maybeDate = null;
+        Console.WriteLine(maybeDate.GetValueOrDefault());
     }
 
     public static void Swap<T>(ref T first, ref T second)
