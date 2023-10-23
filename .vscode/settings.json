@@ -1,0 +1,30 @@
+{
+    "configuration": "Debug",
+    "debug.terminal.clearBeforeReusing": true,
+    "terminal.integrated.automationProfile.windows": {
+        "path": "C:\\Windows\\System32\\cmd.exe"
+    },
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/.git": true,
+        "**/.git-hooks-for-reuse": false,
+        "**/.vs": true,
+        "**/.vscode": false,
+        "**/.config": false
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.codeLens": true,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.stickyTabStops": true,
+    "editor.detectIndentation": true,
+    "files.autoSave": "onWindowChange",
+    "xml.format.splitAttributesIndentSize": 4,
+    "files.eol": "\n",
+    "dotnet.inlayHints.enableInlayHintsForParameters": true,
+    "csharp.inlayHints.enableInlayHintsForTypes": true,
+    "gitlens.blame.format": "${id}-${agoOrDate|10} - ${author}",
+    "dotnet.server.useOmnisharp": true
+}
