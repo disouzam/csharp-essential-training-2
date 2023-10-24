@@ -12,7 +12,7 @@
 
             Console.WriteLine("Using a Queue");
 
-            while (( item = q.Dequeue()) != null ) 
+            while ((item = q.Dequeue()) != null)
             {
                 Console.WriteLine(item);
 
@@ -35,10 +35,10 @@
             Console.WriteLine();
             Console.WriteLine("Using a Stack");
 
-            while((stkItem = stk.Pop()) != null)
+            while ((stkItem = stk.Pop()) != null)
             {
                 Console.WriteLine(stkItem);
-                
+
                 if (stk.Count <= 0)
                 {
                     break;
