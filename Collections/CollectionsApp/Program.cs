@@ -1,9 +1,15 @@
-﻿namespace CollectionsApp
+﻿using CollectionLibrary;
+
+namespace CollectionsApp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            CollectionSamples.Queue();
+            CollectionSamples.Stack();
+            return;
+
             string[] names = new string[2];
 
             names[0] = "matt";
@@ -22,7 +28,7 @@
             foreach (var item in al)
             {
                 Console.WriteLine(item);
-            }
+            }            
         }
     }
 }
