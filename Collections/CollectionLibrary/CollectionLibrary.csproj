@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Generics\Essentials2.Library\Essentials2.Library.csproj" />
+  </ItemGroup>
+
 </Project>

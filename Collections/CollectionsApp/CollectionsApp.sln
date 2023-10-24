@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionsApp", "Collectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionLibrary", "..\CollectionLibrary\CollectionLibrary.csproj", "{C073368A-9D5E-42A7-9AFA-FD8BE821B20F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Essentials2.Library", "..\..\Generics\Essentials2.Library\Essentials2.Library.csproj", "{F15D0B29-3AB0-41E5-8D80-5011E9B600B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C073368A-9D5E-42A7-9AFA-FD8BE821B20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C073368A-9D5E-42A7-9AFA-FD8BE821B20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C073368A-9D5E-42A7-9AFA-FD8BE821B20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15D0B29-3AB0-41E5-8D80-5011E9B600B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15D0B29-3AB0-41E5-8D80-5011E9B600B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15D0B29-3AB0-41E5-8D80-5011E9B600B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15D0B29-3AB0-41E5-8D80-5011E9B600B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
