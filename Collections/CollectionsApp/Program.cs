@@ -8,6 +8,8 @@ namespace CollectionsApp
         {
             CollectionSamples.Queue();
             CollectionSamples.Stack();
+
+            CollectionSamples.Indexing();
             return;
 
             string[] names = new string[2];
